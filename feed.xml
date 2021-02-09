@@ -4,7 +4,7 @@
   <id>203ny.tk/</id>
   <title>Yucapri</title>
   <subtitle>Blog of Yucapri</subtitle>
-  <updated>2021-02-09T20:39:37+08:00</updated>
+  <updated>2021-02-09T20:43:11+08:00</updated>
   <author>
     <name>Yucapri</name>
     <uri>203ny.tk/</uri>
@@ -112,32 +112,24 @@
 
 在无序列表符号后面加上[]或者[x]代表选中或者未选中情况
 
-``
-
-  ROW1
-  ROW2 
-``
+- [x] ROW1  
+- [ ] ROW2 
 
 
 或者
 
-``
-
-  ROW1
-  ROW2 
-``
++ [x] ROW1  
++ [ ] ROW2 
 
 
 或者
 
-``
-
-  ROW1
-  ROW2
-``
+* [x] ROW1  
+* [ ] ROW2
 
 
 效果如下：
+
 
   ROW1
   ROW2
