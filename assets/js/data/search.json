@@ -27,7 +27,7 @@
 
 
 
-    "snippet": "学习内容：Markdown复选框在无序列表符号后面加上[]或者[x]代表选中或者未选中情况``  ROW1  ROW2 或者  ROW1  ROW2 或者  ROW1  ROW2``效果如下：  ROW1  ROW2"
+    "snippet": "学习内容：Markdown复选框在无序列表符号后面加上[]或者[x]代表选中或者未选中情况``  ROW1  ROW2 ``或者``  ROW1  ROW2 ``或者``  ROW1  ROW2``效果如下：  ROW1  ROW2"
   }
   
 ]
