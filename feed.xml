@@ -4,7 +4,7 @@
   <id>203ny.tk/</id>
   <title>Yucapri</title>
   <subtitle>Blog of Yucapri</subtitle>
-  <updated>2021-02-09T19:25:04+08:00</updated>
+  <updated>2021-02-09T20:27:31+08:00</updated>
   <author>
     <name>Yucapri</name>
     <uri>203ny.tk/</uri>
@@ -50,12 +50,90 @@
 
       
   今天是2021年2月9日，农历2020年十二月二十八
-今日距离出成绩还有18天
+
+
+
+  今日距离出成绩还有18天
 
 
 今日学习内容
 
+
+  单词
+  软件工程专业课
+
+
 明日学习安排
+
+
+  单词
+  软件工程专业课
+
+
+
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Markdown语法之复选框</title>
+    <link href="203ny.tk/posts/Markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/" rel="alternate" type="text/html" title="Markdown语法之复选框" />
+    <published>2021-02-09T13:17:59+08:00</published>
+  
+    <updated>2021-02-09T13:17:59+08:00</updated>
+  
+    <id>203ny.tk/posts/Markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/</id>
+    <content src="203ny.tk/posts/Markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+    <category term="学习" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      学习内容：Markdown复选框
+
+在无序列表符号后面加上[]或者[x]代表选中或者未选中情况
+
+``
+
+  ROW1
+  ROW2 
+
+或者
+
+  ROW1
+  ROW2 
+
+或者
+
+  ROW1
+  ROW2
+``
+
+
+效果如下：
+
+  ROW1
+  ROW2
+
 
 
     </summary>
