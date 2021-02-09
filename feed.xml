@@ -1,0 +1,141 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>203ny.tk/</id>
+  <title>Yucapri</title>
+  <subtitle>Blog of Yucapri</subtitle>
+  <updated>2021-02-09T17:29:23+08:00</updated>
+  <author>
+    <name>Yucapri</name>
+    <uri>203ny.tk/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="203ny.tk/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en-US"
+    href="203ny.tk/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <rights> © 2021 Yucapri </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>还有18天出成绩</title>
+    <link href="203ny.tk/posts/Eighteen-Days-Before/" rel="alternate" type="text/html" title="还有18天出成绩" />
+    <published>2021-02-09T07:32:00+08:00</published>
+  
+    <updated>2021-02-09T07:32:00+08:00</updated>
+  
+    <id>203ny.tk/posts/Eighteen-Days-Before/</id>
+    <content src="203ny.tk/posts/Eighteen-Days-Before/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="出成绩" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This post is to enable Page Views on the Chirpy theme based blog that you just built. This requires technical knowledge and it’s recommended to keep the google_analytics.pv disabled unless you have a good reason. If your website has low traffic, the page views count would discourage you to write more blogs. With that said, let’s start with the setup.
+
+Set up Google Analytics
+
+Create GA account ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Welcome to Jekyll!</title>
+    <link href="203ny.tk/posts/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" />
+    <published>2021-02-08T11:45:09+08:00</published>
+  
+    <updated>2021-02-08T11:45:09+08:00</updated>
+  
+    <id>203ny.tk/posts/welcome-to-jekyll/</id>
+    <content src="203ny.tk/posts/welcome-to-jekyll/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="jekyll" />
+    
+    <category term="update" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.
+
+Jekyll requires blog post files to be named according to the following format:
+
+YEAR-MONTH-DAY-title.MAR...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Enable Google Page Views</title>
+    <link href="203ny.tk/posts/enable-google-pv/" rel="alternate" type="text/html" title="Enable Google Page Views" />
+    <published>2021-01-04T07:32:00+08:00</published>
+  
+    <updated>2021-02-09T11:47:06+08:00</updated>
+  
+    <id>203ny.tk/posts/enable-google-pv/</id>
+    <content src="203ny.tk/posts/enable-google-pv/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This post is to enable Page Views on the Chirpy theme based blog that you just built. This requires technical knowledge and it’s recommended to keep the google_analytics.pv disabled unless you have a good reason. If your website has low traffic, the page views count would discourage you to write more blogs. With that said, let’s start with the setup.
+
+Set up Google Analytics
+
+Create GA account ...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
