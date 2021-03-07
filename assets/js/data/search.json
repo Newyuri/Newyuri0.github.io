@@ -12,7 +12,7 @@
 
 
 
-    "snippet": "学习内容：Markdown复选框在无序列表符号后面加上[]或者[x]代表选中或者未选中情况- [x] ROW1  - [ ] ROW2 或者+ [x] ROW1  + [ ] ROW2 或者* [x] ROW1  * [ ] ROW2效果如下：  ROW1  ROW2![image][gundam]you can write your document here [gundam]:/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAKAAD/4QMaaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL..."
+    "snippet": "学习内容：Markdown复选框在无序列表符号后面加上[]或者[x]代表选中或者未选中情况- [x] ROW1  - [ ] ROW2 或者+ [x] ROW1  + [ ] ROW2 或者* [x] ROW1  * [ ] ROW2效果如下：  ROW1  ROW2you can write your document here"
   }
   
 ]
