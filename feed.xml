@@ -4,7 +4,7 @@
   <id>203ny.tk/</id>
   <title>Yucapri</title>
   <subtitle>Blog of Yucapri</subtitle>
-  <updated>2021-02-09T20:43:11+08:00</updated>
+  <updated>2021-03-07T09:42:31+08:00</updated>
   <author>
     <name>Yucapri</name>
     <uri>203ny.tk/</uri>
@@ -17,66 +17,6 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title>还有18天出成绩</title>
-    <link href="203ny.tk/posts/Eighteen-Days-Before/" rel="alternate" type="text/html" title="还有18天出成绩" />
-    <published>2021-02-09T13:17:59+08:00</published>
-  
-    <updated>2021-02-09T13:17:59+08:00</updated>
-  
-    <id>203ny.tk/posts/Eighteen-Days-Before/</id>
-    <content src="203ny.tk/posts/Eighteen-Days-Before/" />
-    <author>
-      <name>Yucapri</name>
-    </author>
-
-  
-    
-    <category term="考研" />
-    
-    <category term="出成绩" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-  今天是2021年2月9日，农历2020年十二月二十八
-
-
-
-  今日距离出成绩还有18天
-
-
-今日学习内容
-
-
-  单词
-  软件工程专业课
-
-
-明日学习安排
-
-
-  单词
-  软件工程专业课
-
-
-
-
-
-    </summary>
-  
-
-  </entry>
 
   
   <entry>
@@ -135,7 +75,9 @@
   ROW2
 
 
-
+![image][gundam]
+you can write your document here 
+[gundam]:/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAKAAD/4QMaaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/...
     </summary>
   
 
