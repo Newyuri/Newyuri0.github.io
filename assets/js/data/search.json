@@ -1,4 +1,814 @@
 [
   
+  {
+    "title": "Nginx部署静态页出现中文乱码",
+    "url": "/posts/%E6%8A%80%E6%9C%AF-Nginx%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E9%A1%B5%E5%87%BA%E7%8E%B0%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/",
+    "categories": "技术",
+    "tags": "Nginx",
+    "date": "2018-06-13 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "Nginx部署静态页出现中文乱码在nginx服务器用vim编了个测试HTML网页。。。。浏览器访问乱码，编辑了下nginx的配置文件nginx.conf添加了一行charset utf-8;http {    include       mime.types;    default_type  application/octet-stream;    sendfile        on;    keepalive_timeout  65;    charset utf-8;    #对所有主机生效或者添加在service模块只对单个主机生效比如下面#内容    server {    ..."
+  },
+  
+  {
+    "title": "使用MySQL命令行备份和恢复数据库",
+    "url": "/posts/Linux-%E4%BD%BF%E7%94%A8MySQL%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%A4%87%E4%BB%BD%E5%92%8C%E6%81%A2%E5%A4%8D%E6%95%B0%E6%8D%AE%E5%BA%93/",
+    "categories": "Linux",
+    "tags": "MySQL",
+    "date": "2018-06-12 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "导出数据库：mysqldump -u 用户名 -p 数据库名 &amp;gt; 导出的文件名比如在命令行中输入命令 mysqldump -u root -p person &amp;gt;d:\\person.sql  输入后会让你输入进入MySQL的密码如果导出单张表的话在数据库名后面输入表名即可执行完成后，会看到d盘中有person.sql 文件MySQL命令行导入数据库进入MySQL：mysql -u 用户名 -p如我输入的命令行:mysql -u root -p  输入同样后会让你输入MySQL的密码新建一个数据库，这时是空数据库，如新建一个名为person的目标数据库输入：mys..."
+  },
+  
+  {
+    "title": "yum提示Another app is currently holding the yum lock...",
+    "url": "/posts/Linux-yum%E6%8F%90%E7%A4%BAAnother_app_is_currently_holding_the_yum_lock/",
+    "categories": "Linux",
+    "tags": "yum",
+    "date": "2018-06-12 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "使用yum安装计划任务功能，结果提示：yum -y install vixie-cronLoaded plugins: fastestmirror, refresh-packagekit, securityExisting lock /var/run/yum.pid: another copy is running as pid 25960.Another app is currently holding the yum lock; waiting for it to exit...可能是系统自动升级正在运行，yum在锁定状态中。已经有一个yum进程在运行了，使用kill干掉它：# ki..."
+  },
+  
+  {
+    "title": "防火墙Firewalld",
+    "url": "/posts/Linux-%E9%98%B2%E7%81%AB%E5%A2%99Firewalld/",
+    "categories": "Linux",
+    "tags": "Firewalld",
+    "date": "2018-06-10 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "防火墙Firewalld最近想把自己的服务器提升一下档次，以前都是直接关掉防火墙，最经重新搭服务器就想试试防火墙怎么用了[root@centos-tokyo ~]# firewall-cmd --zone=dmz --list-ports[root@centos-tokyo ~]# firewall-cmd --zone=public --add-port=80/tcp --permanentsuccess[root@centos-tokyo ~]# firewall-cmd --zone=dmz --list-ports[root@centos-tokyo ~]# firewall-c..."
+  },
+  
+  {
+    "title": "Jenkins FAQ",
+    "url": "/posts/%E6%8A%80%E6%9C%AF-Jenkins-FAQ/",
+    "categories": "技术",
+    "tags": "Jenkins",
+    "date": "2018-06-07 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "Jenkins FAQ1.由于权限设置不对导致Jenkins无法登录在jenkins默认的主目录.jenkins中修改config.xml文件这个权限对应“任何用户可以做任何事(没有任何限制)&amp;lt;authorizationStrategy class=&quot;hudson.security.AuthorizationStrategy$Unsecured&quot;&amp;gt;&amp;lt;/authorizationStrategy&amp;gt;这个权限对应“登录用户可以做任何事&amp;lt;authorizationStrategy class=&quot;h..."
+  },
+  
+  {
+    "title": "面试题总结",
+    "url": "/posts/iOS-%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/",
+    "categories": "iOS",
+    "tags": "面试题",
+    "date": "2017-10-04 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "列举一下最近面试被提及频率比较高的问题问题view只有一个父视图把Dictionary的key和value交换以清理重复value的key代理对象使用weak声明表示该对象并不负责保持delegate对象，生命周期由外部控制；若使用strong声明则会强引用delegate对象，外界无法销毁，容易造成循环引用block是一个指向__main_block_impl_0的结构体指针，这个结构体包含__block_impl和__main_block_impl_0两个结构体，和一个方法如果对象内部有一个block属性，而在block内部又访问了该对象，那么会造成循环引用。解决办法是在对象的前面使..."
+  },
+  
+  {
+    "title": "日常整理",
+    "url": "/posts/iOS-%E6%97%A5%E5%B8%B8%E6%95%B4%E7%90%86/",
+    "categories": "iOS",
+    "tags": "日常整理",
+    "date": "2017-10-04 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "整理一下日常工作中的收获UsuallysearchControllerscrollView边框回弹 setAlwaysBounceVertical"
+  },
+  
+  {
+    "title": "tableView的一些问题",
+    "url": "/posts/iOS-tableView%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/",
+    "categories": "iOS",
+    "tags": "tableView",
+    "date": "2017-08-01 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "tableView的一些问题使用tableView时实现分组效果会遇到sectionHeader是否停留的处理，停留就选择plain，不停留就选择group使用group时会遇到分组下边多出一块，那是默认的heightForFooterInSection，在代理方法里返回0.01即可"
+  },
+  
+  {
+    "title": "SVN基本命令行操作",
+    "url": "/posts/Linux-SVN%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/",
+    "categories": "Linux",
+    "tags": "SVN",
+    "date": "2017-07-21 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "SVN基本命令行操作先复习一下常用的几个命令ls, rm, git add, git commit -a -m &#39;information&#39;, git pull, git push, git cloneadd全部问号的文件:svn status | grep ? |cut -d&quot; &quot; -f2- | xargs svn add查看状态:svn st提交:svn ci -m &#39;information&#39;查看仓库信息:svn info切换远程仓库地址:svn sw --relocate svn://user@serverHost1/docunme..."
+  },
+  
+  {
+    "title": "Xcode全局变量",
+    "url": "/posts/iOS-Xcode%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F/",
+    "categories": "iOS",
+    "tags": "Xcode",
+    "date": "2017-06-01 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Xcode全局变量原文地址$(BUILT_PRODUCTS_DIR)build成功后的，最终产品路径－－即build/Debug-iphoneos路径下$(TARGET_NAME)标工程名称$(SRCROOT)工程文件（比如Nuno.xcodeproj）的路径(CURRENT_PROJECT_VERSION)当前工程版本号当编译静态库，设备选模拟器(iPhone 5.0 Simulator)，未设置任何Build Settings参数时，默认的基础路径：/Users/xxx/Library/Developer/Xcode/DerivedData/xxxWorkspace-caepeadw..."
+  },
+  
+  {
+    "title": "一个电脑多个ssh-key",
+    "url": "/posts/Mac-%E4%B8%80%E4%B8%AA%E7%94%B5%E8%84%91%E5%A4%9A%E4%B8%AAssh-key/",
+    "categories": "Mac",
+    "tags": "ssh-key",
+    "date": "2017-05-11 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "一个电脑多个ssh-key一个电脑多个ssh-key可以通过config文件来管理Host aaaHostName github.comUser gitIdentityFile ~/.ssh/id_rsa_aaaHost bbbHostName github.comUser gitIdentityFile ~/.ssh/id_rsa_bbb配置完成即可通过ssh -T aaa或bbb来验证之后再clone项目就可以直接使用配置的别名例如 git clone git@aaa:xxxxx/xxxx.git如果是已经clone过的项目，可以切换远程仓库地址，进入.git目录，修改config文..."
+  },
+  
+  {
+    "title": "AppleDoc",
+    "url": "/posts/Mac-AppleDoc/",
+    "categories": "Mac",
+    "tags": "AppleDoc",
+    "date": "2017-05-11 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "AppleDoc结项目前都要做文档，这个工具真是用处大大的。/Users/wuguobin/Library/Developer/Shared/Documentation/DocSets 记住这个目录下载appleDoc，安装后即可生成文档，xxx.docset,然后将这些文件夹放入上面那个目录就可以了"
+  },
+  
+  {
+    "title": "在openshift部署war包",
+    "url": "/posts/Mac-%E5%9C%A8openshift%E9%83%A8%E7%BD%B2war%E5%8C%85/",
+    "categories": "Mac",
+    "tags": "openshift",
+    "date": "2017-05-02 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "在Openshift部署war包获取到项目的ssh链接，使用scp ROOT.war ssh链接:/tmp 将war包上传至openshift通过ssh连接到openshift，cd jbossews/webapps &amp;amp;&amp;amp; mv /tmp/ROOT.war ROOT.war然后到openshift应用主页restart application就可以了scp ROOT.war 58e5a9f889f5cf3f5f000185@jbossews-0513.rhcloud.com:/tmpssh 58e5a9f889f5cf3f5f000185@jbossews..."
+  },
+  
+  {
+    "title": "Reactive Cocoa",
+    "url": "/posts/iOS-Reactive-Cocoa/",
+    "categories": "iOS",
+    "tags": "Reactive Cocoa",
+    "date": "2017-03-28 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Reactive CocoaReactive Cocoa常见类介绍RACSiganl信号类,一般表示将来有数据传递，只要有数据改变，信号内部接收到数据，就会马上发出数据  注意：信号类(RACSiganl)，只是表示当数据改变时，信号内部会发出数据，它本身不具备发送信号的能力，而是交给内部一个订阅者去发出。默认一个信号都是冷信号，也就是值改变了，也不会触发，只有订阅了这个信号，这个信号才会变为热信号，值改变了才会触发如何订阅信号：调用信号RACSignal的subscribeNext就能订阅RACSubscriber表示订阅者的意思，用于发送信号，这是一个协议，不是一个类，只要遵守这个协..."
+  },
+  
+  {
+    "title": "UIButton切换selected状态标题闪烁问题",
+    "url": "/posts/iOS-UIButton%E5%88%87%E6%8D%A2selected%E7%8A%B6%E6%80%81%E6%A0%87%E9%A2%98%E9%97%AA%E7%83%81%E9%97%AE%E9%A2%98/",
+    "categories": "iOS",
+    "tags": "UIButton",
+    "date": "2017-03-10 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "UIButton切换selected状态标题闪烁问题在使用UIButton时会遇到切换selected状态然后更换标题，这时候标题会闪，因此只修改normal状态的文字就好了，像这样WS(weakSelf);[self.joinButton addAction:^(UIButton *button) {weakSelf.callBack(weakSelf.data,weakSelf.joinButton.isSelected);[weakSelf.joinButton setSelected:!weakSelf.joinButton.isSelected];}];[RACObserve(..."
+  },
+  
+  {
+    "title": "TTTAttributedLabel使用心得",
+    "url": "/posts/iOS-TTTAttributedLabel%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/",
+    "categories": "iOS",
+    "tags": "TTTAttributedLabel",
+    "date": "2017-03-10 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "TTTAttributedLabel使用心得TTTAttributedLabel实现了在label上添加链接等点击事件的功能点击事件TTT的实现方法是在- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event方法中获取到touch的点，随后将这个点传入- (TTTAttributedLabelLink *)linkAtPoint:(CGPoint)point方法中，找到点击位置的链接文本，如果有则进入回调，没有则事件结束。TTT提供了- (CFIndex)characterIndexAtPoint:(CGPoint)..."
+  },
+  
+  {
+    "title": "React Native_模拟器",
+    "url": "/posts/React-Native-%E6%A8%A1%E6%8B%9F%E5%99%A8/",
+    "categories": "React Native",
+    "tags": "模拟器",
+    "date": "2016-09-18 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "RN 模拟器小问题如果Command⌘ + R无法使你的iOS模拟器加载js，则可以通过选中Hardware menu中Keyboard选项下的Connect Hardware Keyboard。Command⌘ + M 安卓菜单RR 安卓刷新"
+  },
+  
+  {
+    "title": "LNMP一键安装",
+    "url": "/posts/Linux-LNMP%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85/",
+    "categories": "Linux",
+    "tags": "命令行",
+    "date": "2016-09-14 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "LNMP一键安装作为一位有着全栈理想的工程师，还是要不停的折腾…http://lnmp.orgsession.save_path 要修改最后一个 默认值为／tmp的那个"
+  },
+  
+  {
+    "title": "http_status_code",
+    "url": "/posts/%E6%8A%80%E6%9C%AF-http-status-code/",
+    "categories": "技术",
+    "tags": "http_status_code",
+    "date": "2016-08-26 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "http_status_code响应码由三位十进制数字组成，它们出现在由HTTP服务器发送的响应的第一行。响应码分五种类型，由它们的第一位数字表示：1.1xx：信息，请求收到，继续处理2.2xx：成功，行为被成功地接受、理解和采纳3.3xx：重定向，为了完成请求，必须进一步执行的动作4.4xx：客户端错误，请求包含语法错误或者请求无法实现5.5xx：服务器错误，服务器不能实现一种明显无效的请求2xx 成功200 正常；请求已完成。201 正常；紧接 POST 命令。202 正常；已接受用于处理，但处理尚未完成。203 正常；部分信息 — 返回的信息只是一部分。204 正常；无响应 — 已..."
+  },
+  
+  {
+    "title": "CABasicAnimation",
+    "url": "/posts/iOS-CABasicAnimation/",
+    "categories": "iOS",
+    "tags": "CABasicAnimation",
+    "date": "2016-08-23 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "CABasicAnimation今天用到了CABasicAnimation来处理一个动画，简单学习一下AnimationWithKeyPath的值transform.scale = 比例轉換transform.scale.x = 闊的比例轉換transform.scale.y = 高的比例轉換transform.rotation.z = 平面圖的旋轉opacity = 透明度marginzPositionbackgroundColor 背景颜色cornerRadius 圆角borderWidthboundscontentscontentsRectcornerRadiusframehidd..."
+  },
+  
+  {
+    "title": "docker安装与部署",
+    "url": "/posts/Linux-docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/",
+    "categories": "Linux",
+    "tags": "docker",
+    "date": "2016-08-17 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "Linux_docker安装与部署安装yum -y install docker-io"
+  },
+  
+  {
+    "title": "Atom快捷键定义",
+    "url": "/posts/%E6%8A%80%E6%9C%AF-Atom%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%AE%9A%E4%B9%89/",
+    "categories": "技术",
+    "tags": "Atom",
+    "date": "2016-08-16 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "Atom快捷键定义&#39;atom-text-editor&#39;:&#39;cmd-alt-1&#39;: &#39;nuclide-react-native:start-packager&#39;&#39;cmd-alt-2&#39;: &#39;nuclide-react-native:stop-packager&#39;atom-text-editor 是触发这个快捷键的区域，cmd-alt-1 是按键，nuclide-react-native:stop-packager 是要触发的·命令（可以在 cmd+shift+p 中看到准确的命令名，命令一定要全部小写，空格用-代替）..."
+  },
+  
+  {
+    "title": "React Nativeの坑",
+    "url": "/posts/React-Native-React-Native%E3%81%AE%E5%9D%91/",
+    "categories": "React Native",
+    "tags": "坑",
+    "date": "2016-08-16 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "React Nativeの坑不会报错的RN与React配比For RN 0.30 and 0.31: npm install react@15.2.1For RN 0.32: npm install react@15.3.0RN-&amp;gt;View支持的属性widthheighttopleftrightbottomminWidthmaxWidthminHeightmaxHeightmarginmarginVerticalmarginHorizontalmarginTopmarginBottommarginLeftmarginRightpaddingpaddingVerticalpa..."
+  },
+  
+  {
+    "title": "特殊字符",
+    "url": "/posts/Mac-%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6/",
+    "categories": "Mac",
+    "tags": "特殊字符",
+    "date": "2016-08-11 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "特殊字符alt + 1 = ¡alt + 2 = ™alt + 3 = £alt + 4 = ¢alt + 5 = ∞alt + 6 = §alt + 7 = ¶alt + 8 = •alt + 9 = ªalt + 0 = ºalt + - = –alt + = = ≠alt + a = åalt + b = ∫alt + c = çalt + d = ∂alt + e = ´alt + f = ƒalt + g = ©alt + h = ˙alt + i = ˆalt + j = ∆alt + k = ˚alt + l = ¬alt + m = µalt + n = ˜alt + o..."
+  },
+  
+  {
+    "title": "Windows_Office",
+    "url": "/posts/Windows-Windows-Office/",
+    "categories": "Windows",
+    "tags": "Office",
+    "date": "2016-08-09 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "Windows Office  XP系统最高只能安装2010！简体中文版 Office 2010 pro plus retail 32和64合包安装密钥：GXVBT-YXFGD-QT97T-VPKWB-TF328，安装之前要在控制面板把office组件卸载干净ed2k://|file|cn\\_office\\_professional\\_plus\\_2010\\_x86\\_x64\\_dvd\\_515527.iso|1850281984|8CA2D23BCB767EDEE53C7F7455A60C72|/苹果系统的看过来！简体中文版office for mac 2016ed2k://|file..."
+  },
+  
+  {
+    "title": "wamp主页项目链接问题解决",
+    "url": "/posts/Windows-wamp%E4%B8%BB%E9%A1%B5%E9%A1%B9%E7%9B%AE%E9%93%BE%E6%8E%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/",
+    "categories": "Windows",
+    "tags": "wamp",
+    "date": "2016-07-19 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "wamp主页项目链接问题解决打开www目录下的index.php文件，搜索if (is_dir($file) &amp;amp;&amp;amp; !in_array($file,$projectsListIgnore)) ，判断逻辑里面的a标签就是目录，在http://后面加上localhost/即可if (is_dir($file) &amp;amp;&amp;amp; !in_array($file,$projectsListIgnore)){       //[modif oto] Ajout éventuel de http:// pour éviter le niveau l..."
+  },
+  
+  {
+    "title": "node入门2",
+    "url": "/posts/node-node%E5%85%A5%E9%97%A82/",
+    "categories": "node",
+    "tags": "node",
+    "date": "2016-07-18 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "node_node入门2Node入门课程 2说一下node npm的更新npm更新npm -g updatenode更新npm install –g nn latest"
+  },
+  
+  {
+    "title": "用paw调试接口",
+    "url": "/posts/%E6%8A%80%E6%9C%AF-%E7%94%A8paw%E8%B0%83%E8%AF%95%E6%8E%A5%E5%8F%A3/",
+    "categories": "技术",
+    "tags": "paw",
+    "date": "2016-06-20 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "用paw调试接口使用paw调试POST请求接口只需要在body选项内选取右边的form url-encode,添加参数即可。"
+  },
+  
+  {
+    "title": "Windows_安装序列号",
+    "url": "/posts/Windows-%E5%AE%89%E8%A3%85%E5%BA%8F%E5%88%97%E5%8F%B7/",
+    "categories": "Windows",
+    "tags": "安装序列号",
+    "date": "2016-06-20 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "Windows 安装序列号Win8.1安装序列号核心版（multiple editions）： 334NH-RXG76-64THK-C7CKG-D3VPT专业版（Professional）： XHQ8N-C3MCJ-RQXB6-WCHYG-C9WKBWin10安装序列号Windows 10专业版：W269N-WFGWX-YVC9B-4J6C9-T83GXWindows 10专业版N：MH37W-N47XK-V7XM9-C7227-GCQG9Windows 10企业版：NPPR9-FWDCX-D2C8J-H872K-2YT43Windows 10企业版N：DPH2V-TTNVB-4X9Q3..."
+  },
+  
+  {
+    "title": "好用的命令_screen",
+    "url": "/posts/Linux-%E5%A5%BD%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4_screen/",
+    "categories": "Linux",
+    "tags": "screen",
+    "date": "2016-06-11 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "好用的命令_screen很多时候大家都是通过ssh远程操作服务器，当你上传一个超大的文件或者开启某个服务的时候，你会发现，你无法关闭你本地的终端，否则一切都会消失……因此，我们需要关闭本地终端还不会因为SIGNUP关掉我们希望一直运行的程序。我为大家推荐一个好用的应用：screen。流行的Linux发行版（例如Red Hat Enterprise Linux 4）通常会自带screen实用程序，如果没有的话，可以从GNU screen的官方网站下载。你可以输入screen,这样会打开一个新的终端界面，或者，在你的命令之前加上screen，例如screen vi new.txt，然后你可以..."
+  },
+  
+  {
+    "title": "Sublime_Text_中文乱码解决",
+    "url": "/posts/Windows-Sublime-Text-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/",
+    "categories": "Windows",
+    "tags": "Sublime_Text",
+    "date": "2016-06-09 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "Sublime_Text_中文乱码解决最近看了魔兽电影，虽说玩过一点游戏，不过我还真的不了解整个世界观。看完电影，有了点信仰的感觉，就去下了几部号称官方的小说。下完小说，问题就来了……我用sublime text 2打开竟然是乱码……WTF……多亏了这货具体的安装方法，就是下载到本地，是个文件夹，然后整个扔到应用安装目录的Packages路径下就好了……"
+  },
+  
+  {
+    "title": "node入门1",
+    "url": "/posts/node-node%E5%85%A5%E9%97%A81/",
+    "categories": "node",
+    "tags": "node",
+    "date": "2016-06-04 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "node入门1Node入门课程 1记录一下自己的node学习历程。很尴尬，最初安装node只是出于对hexo的兴趣，具体的安装过程已经想不起来，推荐CNode：Node.js专业中文社区,感兴趣的行查阅一下吧。越过了安装呢，其实也没省多少事(-_-!)。好吧，该来点干货了。先上代码：再插一嘴，关于JS基础的呢我就不说了，我的基础也不好，以后会涉及到的我再单独介绍。这段代码应该很好理解，我写了注释，大家可以参考一下：var express = require(&#39;express&#39;); //这一行代码的作用是引用外部express模块。var app = express();a..."
+  },
+  
+  {
+    "title": "班瓦工",
+    "url": "/posts/Linux-%E7%8F%AD%E7%93%A6%E5%B7%A5/",
+    "categories": "Linux",
+    "tags": "班瓦工",
+    "date": "2016-05-22 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "班瓦工介绍一个scp吧首先在你的服务器新建目录／root/.ssh然后执行scp -P ssh端口号 .ssh/id_rsa.pub 用户@IP地址:/root/.ssh/authorized_keys然后就可以不用密码远程连接啦获取pip安装包wget https://bootstrap.pypa.io/get-pip.py --no-check-certificate然后执行python get-pip.py ,pip install shadowsocks"
+  },
+  
+  {
+    "title": "科学上网大教程(持续更新)",
+    "url": "/posts/%E6%8A%80%E6%9C%AF-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%A4%A7%E6%95%99%E7%A8%8B(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/",
+    "categories": "技术",
+    "tags": "科学上网",
+    "date": "2016-05-21 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "科学上网大教程(持续更新)GFW的日益强大，使国内的网络日益安全。不过真心苦了我们这帮程序员，要知道，看一个程序员是否优秀就看他如何使用Google。喜欢折腾的我当然是一直以优秀程序员自居，所以一定要做出些样子。这就总结了一些科学上网的小招子，望与各位想成为优秀程序员的人们共勉。1.SSH Socks5这是个很犀利的招式，windows怎么使用网上太多了，我就不说了，mac的用法更是简单，不过这一招并不在于怎么使用，前期攒起来才是最重要的。原料：Mac电脑一台，openshift／koding帐号一个ssh -qTfnN -D port xxx@xxx.xx.x打开浏览器，使用socks..."
+  },
+  
+  {
+    "title": "UIAlertController选项字体修改",
+    "url": "/posts/iOS-UIAlertController%E9%80%89%E9%A1%B9%E5%AD%97%E4%BD%93%E4%BF%AE%E6%94%B9/",
+    "categories": "iOS",
+    "tags": "UIAlertController",
+    "date": "2016-05-17 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "UIAlertController选项字体修改_addMateAlert = [UIAlertController alertControllerWithTitle:@&quot;快加入你的另一半吧&quot; message:@&quot;在此功能内，你的另一半可以提醒你去完成计划，在你计划完成到一定阶段时你还可以向他许愿，以资鼓励～&quot; preferredStyle: UIAlertControllerStyleAlert];UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@&quot;以后提醒我&qu..."
+  },
+  
+  {
+    "title": "9.3真机测试",
+    "url": "/posts/iOS-9.3%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95/",
+    "categories": "iOS",
+    "tags": "真机测试",
+    "date": "2016-05-16 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "9.3真机测试不更新Xcode就得费点脑子…链接:百度云 密码:i82x加油吧，同志们…"
+  },
+  
+  {
+    "title": "curl访问接口",
+    "url": "/posts/Linux-curl%E8%AE%BF%E9%97%AE%E6%8E%A5%E5%8F%A3/",
+    "categories": "Linux",
+    "tags": "curl",
+    "date": "2016-03-03 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "curl访问接口今天给自己的app写接口，写了接口就得调试，可是真的很不想为了测个接口把xcode打开，于是去找了一些软件，发现还真有许多很好的接口测试软件，可以发送各种请求，例如Paw等等。但是问题来了，这些软件是付费的，只能自己去找一些破解版，不过破解版自己又不放心，于是又想起来一个东西－－－curl。以前也没接触过这货，只是上次在安装php的时候使用过一次curl命令。这次调试接口事件终于让我有机会接触到了这货。具体的东西自行Google吧，太多了，我也不招人烦在这再说一次，直接上代码吧。curl -X GET -H &quot;header&quot; -i &quot;inte..."
+  },
+  
+  {
+    "title": "不走脑产生的Linker_Error",
+    "url": "/posts/iOS-%E4%B8%8D%E8%B5%B0%E8%84%91%E4%BA%A7%E7%94%9F%E7%9A%84Linker_Error/",
+    "categories": "iOS",
+    "tags": "Linker_Error",
+    "date": "2016-02-23 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "不走脑产生的Linker_Error昨晚被一个问题搞得心神不宁，眼见着就要成功的代码突然出来了个Linker Error，脑瓜子都大了。仗着自己曾经解决过一些Linker Error，开始一行一行的读错误信息，不过跟我之前遇到的丝毫不一样啊，为了不影响今天的工作，带着疑问只好先睡觉了。早上又浏览了一遍stackoverflow，终于找到了一篇文章－－链接。看完之后,问题解决了，不过我也狠狠抽了自己一个大嘴巴。TMD，import文件的时候竟然引用了.m文件，也是醉了…写代码要小心啊！！！小心驶得万年船！！！ 人间正道是沧桑啊！！！"
+  },
+  
+  {
+    "title": "使用自定义字体",
+    "url": "/posts/iOS-%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93/",
+    "categories": "iOS",
+    "tags": "字体",
+    "date": "2016-02-18 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "使用自定义字体下载字体资源文件（.ttf或.otf格式的文件）添加对应的字体(.ttf或.otf格式的文件)到工程的resource在info.plist中添加一项 Fonts provided by application (item0对应的value为simkai.ttf，添加多个字体依次添加就可以了)在代码中使用自定义字体使用示例如下：UITextView *msg = [[UITextView alloc] init];msg.font = [UIFont fontWithName:@&quot;MicrosoftYaHei&quot; size:18.0f];//Microso..."
+  },
+  
+  {
+    "title": "终端彩色显示",
+    "url": "/posts/Linux-%E7%BB%88%E7%AB%AF%E5%BD%A9%E8%89%B2%E6%98%BE%E7%A4%BA/",
+    "categories": "Linux",
+    "tags": "终端",
+    "date": "2016-02-08 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "终端彩色显示修改.bash_profile文件#enables colorin the terminal bash shell export#sets up thecolor scheme for list export#sets up theprompt color (currently a green similar to linux terminal)#enables colorfor iTermexport CLICOLOR=1export LSCOLORS=gxfxcxdxbxegedabagacadexport PS1=&#39;\\[\\033[01;32m\\]\\u@\\h\\[\\..."
+  },
+  
+  {
+    "title": "AFNetworking 3.0",
+    "url": "/posts/iOS-AFNetworking-3.0/",
+    "categories": "iOS",
+    "tags": "AFNetworking",
+    "date": "2016-01-27 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "AFNetworking 3.0AFNetworking是一款在OS X和iOS下都令人喜爱的网络库。为了迎合iOS新版本的升级, AFNetworking在3.0版本中删除了基于 NSURLConnection API的所有支持。如果你的项目以前使用过这些API，建议您立即升级到基于 NSURLSession 的API的AFNetworking的版本。本指南将引导您完成这个过程。本指南是为了引导使用AFNetworking 2.x升级到最新的版本API，以达到过渡的目的，并且解释了新增和更改的设计结构。新设备要求: iOS 7, Mac OS X 10.9, watchOS 2, tv..."
+  },
+  
+  {
+    "title": "Cocoapods安装与使用",
+    "url": "/posts/iOS-Cocoapods%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/",
+    "categories": "iOS",
+    "tags": "Cocoapods",
+    "date": "2016-01-25 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "Cocoapods安装与使用本文将介绍CocoaPods从安装到使用过程。CocoaPods是一个负责管理iOS项目中第三方开源代码的工具。使用CocoaPods可以为我们节省设置和更新第三方开源库的时间。 下面将分为两部分来### 讲述如何安装和使用CocoaPods。一、安装CocoaPods先使用下面命令升级Ruby版本：gem update --systemsudo gem update -n /usr/local/bin --system(更新到新 Mac系统后pod的安装路径变为这个)国内ruby源更新为 http://gems.ruby-china.org更新命令gem s..."
+  },
+  
+  {
+    "title": "接入移动硬盘废纸篓会有删不掉的文件",
+    "url": "/posts/Mac-%E6%8E%A5%E5%85%A5%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E5%BA%9F%E7%BA%B8%E7%AF%93%E4%BC%9A%E6%9C%89%E5%88%A0%E4%B8%8D%E6%8E%89%E7%9A%84%E6%96%87%E4%BB%B6/",
+    "categories": "Mac",
+    "tags": "废纸篓",
+    "date": "2016-01-25 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "接入移动硬盘废纸篓会有删不掉的文件今天手贱网硬盘里干了个Xcode，结果传一半断了，然后就删不掉了，之前在同事的硬盘上出现过这个问题，今天摊到自己头上了，强迫症也犯了，同时也没有好办法解决就只好自己动手了首先命令行打开隐藏文件cd进入硬盘sudo rm -rf .Trash/解决了～不过过程很慢，要耐心等待"
+  },
+  
+  {
+    "title": "查看隐藏文件",
+    "url": "/posts/Mac-%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/",
+    "categories": "Mac",
+    "tags": "隐藏文件",
+    "date": "2016-01-24 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "查看隐藏文件有一些人（比如笔者）总是喜欢捣鼓 Mac 上面的任何文件，尤其是那些被隐藏起来的。所以，我总是喜欢将系统默认的隐藏文件显示出来。熟悉 Windows 系统的用户可能只需要在文件选项菜单那里打上几个勾就可以做到了，那么对于 Mac 用户呢？如何让 Finder 显示隐藏文件和文件夹第一步：打开「终端」应用程序。第二步：输入如下命令：defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder第三步：按下「Return」键确认。现在你将会在 Finder 窗口中看到那些隐藏的文件和..."
+  },
+  
+  {
+    "title": "自定义url_scheam",
+    "url": "/posts/iOS-%E8%87%AA%E5%AE%9A%E4%B9%89url_scheam/",
+    "categories": "iOS",
+    "tags": "url_scheam",
+    "date": "2016-01-23 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "自定义url_scheamiOS 自定义 url scheam"
+  },
+  
+  {
+    "title": "vim高级用法",
+    "url": "/posts/Linux-vim%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/",
+    "categories": "Linux",
+    "tags": "vim",
+    "date": "2016-01-22 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "vim高级用法在VIM中进行文本替换：1. 替换当前行中的内容：:s/from/to/ （s即substitude）:s/from/to/ ： 将当前行中的第一个from，替换成to。如果当前行含有多个from，则只会替换其中的第一个。:s/from/to/g ： 将当前行中的所有from都替换成to。:s/from/to/gc ： 将当前行中的所有from都替换成to，但是每一次替换之前都会询问请求用户确认此操作。  注意：这里的from和to都可以是任何字符串，其中from还可以是正则表达式。2. 替换某一行的内容：:.s/from/to/g ： 在当前行进行替换操作。:33s/fr..."
+  },
+  
+  {
+    "title": "清空废纸篓",
+    "url": "/posts/Mac-%E6%B8%85%E7%A9%BA%E5%BA%9F%E7%BA%B8%E7%AF%93/",
+    "categories": "Mac",
+    "tags": "废纸篓",
+    "date": "2016-01-22 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "清空废纸篓废纸篓清空不了的问题sudo rm -rf ~/.Trash/"
+  },
+  
+  {
+    "title": "关闭DashBoard",
+    "url": "/posts/Mac-%E5%85%B3%E9%97%ADDashBoard/",
+    "categories": "Mac",
+    "tags": "DashBoard",
+    "date": "2016-01-22 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "关闭DashBoard仪表盘，曾经一度是 OS X 的亮点之处，给前几代的 OS X 用户提供了很多便利，利用小插件（Widgets）来管理日常简单工作，非常方便。在多桌面管理界面（Mission Control）也能看见它的面孔。然而如今的 OS X 有了更多其他的功能，更快的程序启动速度，完全不需要这个 Dashboard 来完成任务了，反而成了一种累赘。显然，仪表盘已经被苹果抛弃了，没有原来那样的实际用途，就连 UI 也和 Yosemite 的扁平界面违和不以。那作为用户也得表示表示，高冷地把它禁用掉，省着碍眼。defaults write com.apple.dashboard ..."
+  },
+  
+  {
+    "title": "软连接与硬连接",
+    "url": "/posts/Linux-%E8%BD%AF%E8%BF%9E%E6%8E%A5%E4%B8%8E%E7%A1%AC%E8%BF%9E%E6%8E%A5/",
+    "categories": "Linux",
+    "tags": "命令行",
+    "date": "2016-01-22 09:12:42 +0800",
+    
+
+
+
+
+
+    "snippet": "软连接与硬连接1. 使用方式 ：ln [option] source_file dist_file-f 建立时，将同档案名删除;-i 删除前进行询问;ln -s abc cde 建立abc 的软连接;ln abc cde 建立abc的硬连接.2. 软链接与硬链接的区别（通俗）：硬链接可认为是一个文件拥有两个文件名;而软链接则是系统新建一个链接文件，此文件指向其所要指的文件3. 软链接与硬链接的区别（讲解）：Linux 软连接与硬连接对于一个文件来说，有唯一的索引接点与之对应，而对于一个索引接点号，却可以有多个文件名与之对应。因此，在磁盘上的同一个文件可以通过不同的路径去访问该文件。注意在..."
+  },
+  
+  {
+    "title": "UITextField增加textDidChange回调功能",
+    "url": "/posts/iOS-UITextField%E5%A2%9E%E5%8A%A0textDidChange%E5%9B%9E%E8%B0%83%E5%8A%9F%E8%83%BD/",
+    "categories": "iOS",
+    "tags": "UITextField",
+    "date": "2016-01-22 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "UITextField增加textDidChange回调功能在使用UITextField来判断登陆按钮状态时只有shouldChangeCharactersInRange函数,是在文件还没有改变前就调用了,而不是在改变后调用,要想实现改变后调用的功能,导致登陆按钮显示状态不准确，我们可以增加事件监听的方式先来看看objective-c提供的接口:  // add target/action for particular event. you can call this multiple times and you can specify multiple target/actions f..."
+  },
+  
+  {
+    "title": "hexo部署问题总结",
+    "url": "/posts/%E6%8A%80%E6%9C%AF-hexo%E9%83%A8%E7%BD%B2%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E6%A0%87%E7%AD%BE%E5%92%8C%E5%88%86%E7%B1%BB%E7%9A%84%E4%B8%BB%E9%A1%B5/",
+    "categories": "技术",
+    "tags": "hexo",
+    "date": "2016-01-21 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "hexo部署问题总结hexo部署之后没有标签和分类的主页go to your hexo folderexecute commandhexo new page tagshexo new page categoriesmodify …/source/tags/index.md  OR  …/source/categories/index.md, add linetype: &quot;tags&quot;  OR  type: &quot;categories&quot; if you don’t want to have comments on that page, also addcom..."
+  },
+  
+  {
+    "title": "vim基本操作",
+    "url": "/posts/Linux-vim%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/",
+    "categories": "Linux",
+    "tags": "vim",
+    "date": "2016-01-21 11:30:42 +0800",
+    
+
+
+
+
+
+    "snippet": "vim基本操作用户名:目录 用户名$ vim 文件名命令模式 esc输入模式 i底行模式 ：＃yy -&amp;gt;复制＃行＃dd -&amp;gt; 删除＃行p -&amp;gt; 粘贴$ -&amp;gt; 行首0 -&amp;gt; 行尾"
+  },
+  
+  {
+    "title": "UIButton响应传参数",
+    "url": "/posts/iOS-UIButton%E5%93%8D%E5%BA%94%E4%BC%A0%E5%8F%82%E6%95%B0/",
+    "categories": "iOS",
+    "tags": "UIButton",
+    "date": "2016-01-21 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "UIButton响应传参数开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。 我们以UITableView 为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是 如..."
+  },
+  
+  {
+    "title": "Git基本命令行操作",
+    "url": "/posts/Linux-Git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/",
+    "categories": "Linux",
+    "tags": "git",
+    "date": "2016-01-21 05:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Git基本命令行操作A. 新建Git仓库，创建新文件夹git initB. 添加文件到git索引git add &amp;lt;filename&amp;gt;  --- 单个文件添加git add *　　--- 全部文件添加C. 提交到本地仓库git commit -m &quot;代码提交描述&quot;D. 提交到远端仓库git push origin mastermaster可以换成你想要推送的任何分支  分支：创建一个叫做”lee”的分支，并切换过去git checkout -b lee切换回主分支git checkout master把新建的分支删除git branch -d..."
+  }
+  
 ]
 

@@ -4,7 +4,7 @@
   <id>203ny.tk/</id>
   <title>Yucapri</title>
   <subtitle>Blog of Yucapri</subtitle>
-  <updated>2021-03-10T20:17:52+08:00</updated>
+  <updated>2021-03-10T20:35:59+08:00</updated>
   <author>
     <name>Yucapri</name>
     <uri>203ny.tk/</uri>
@@ -17,6 +17,264 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Nginx部署静态页出现中文乱码</title>
+    <link href="203ny.tk/posts/%E6%8A%80%E6%9C%AF-Nginx%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E9%A1%B5%E5%87%BA%E7%8E%B0%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/" rel="alternate" type="text/html" title="Nginx部署静态页出现中文乱码" />
+    <published>2018-06-13T11:30:42+08:00</published>
+  
+    <updated>2018-06-13T11:30:42+08:00</updated>
+  
+    <id>203ny.tk/posts/%E6%8A%80%E6%9C%AF-Nginx%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E9%A1%B5%E5%87%BA%E7%8E%B0%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</id>
+    <content src="203ny.tk/posts/%E6%8A%80%E6%9C%AF-Nginx%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E9%A1%B5%E5%87%BA%E7%8E%B0%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="技术" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Nginx部署静态页出现中文乱码
+
+在nginx服务器用vim编了个测试HTML网页。。。。浏览器访问乱码，编辑了下nginx的配置文件nginx.conf添加了一行charset utf-8;
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    sendfile        on;
+    keepalive_timeout  65;
+    charset utf-8;    #对所有主机生效或者添加在service模块只对单个主机生效比如下面#内容
+    server {
+        listen       80;
+        server_name  ***.***.***;
+        #charset utf-8;   #"没错就是这里...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>使用MySQL命令行备份和恢复数据库</title>
+    <link href="203ny.tk/posts/Linux-%E4%BD%BF%E7%94%A8MySQL%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%A4%87%E4%BB%BD%E5%92%8C%E6%81%A2%E5%A4%8D%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="alternate" type="text/html" title="使用MySQL命令行备份和恢复数据库" />
+    <published>2018-06-12T09:12:42+08:00</published>
+  
+    <updated>2018-06-12T09:12:42+08:00</updated>
+  
+    <id>203ny.tk/posts/Linux-%E4%BD%BF%E7%94%A8MySQL%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%A4%87%E4%BB%BD%E5%92%8C%E6%81%A2%E5%A4%8D%E6%95%B0%E6%8D%AE%E5%BA%93/</id>
+    <content src="203ny.tk/posts/Linux-%E4%BD%BF%E7%94%A8MySQL%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%A4%87%E4%BB%BD%E5%92%8C%E6%81%A2%E5%A4%8D%E6%95%B0%E6%8D%AE%E5%BA%93/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      导出数据库：
+
+mysqldump -u 用户名 -p 数据库名 &amp;gt; 导出的文件名
+
+比如在命令行中输入命令 mysqldump -u root -p person &amp;gt;d:\person.sql
+
+
+  输入后会让你输入进入MySQL的密码
+如果导出单张表的话在数据库名后面输入表名即可
+
+
+执行完成后，会看到d盘中有person.sql 文件
+
+MySQL命令行导入数据库
+
+进入MySQL：mysql -u 用户名 -p
+
+如我输入的命令行:mysql -u root -p
+
+
+  输入同样后会让你输入MySQL的密码
+
+
+新建一个数据库，这时是空数据库，如新建一个名为person的目标数据库
+
+输入：mysql&amp;gt;use 目标数据库名
+
+如我输入的命令行:mysql&amp;gt;use person;
+
+导入文件：mysql&amp;gt;source 导入的文件名;
+
+如我输入...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>yum提示Another app is currently holding the yum lock...</title>
+    <link href="203ny.tk/posts/Linux-yum%E6%8F%90%E7%A4%BAAnother_app_is_currently_holding_the_yum_lock/" rel="alternate" type="text/html" title="yum提示Another app is currently holding the yum lock..." />
+    <published>2018-06-12T09:12:42+08:00</published>
+  
+    <updated>2018-06-12T09:12:42+08:00</updated>
+  
+    <id>203ny.tk/posts/Linux-yum%E6%8F%90%E7%A4%BAAnother_app_is_currently_holding_the_yum_lock/</id>
+    <content src="203ny.tk/posts/Linux-yum%E6%8F%90%E7%A4%BAAnother_app_is_currently_holding_the_yum_lock/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      使用yum安装计划任务功能，结果提示：
+
+yum -y install vixie-cron
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Existing lock /var/run/yum.pid: another copy is running as pid 25960.
+Another app is currently holding the yum lock; waiting for it to exit...
+
+
+可能是系统自动升级正在运行，yum在锁定状态中。
+已经有一个yum进程在运行了，使用kill干掉它：
+
+# kill -s 9 25960
+# ps aux|grep yum
+root      6744  0.0  0.0 103260   900 pts/1    S+   14:59...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>防火墙Firewalld</title>
+    <link href="203ny.tk/posts/Linux-%E9%98%B2%E7%81%AB%E5%A2%99Firewalld/" rel="alternate" type="text/html" title="防火墙Firewalld" />
+    <published>2018-06-10T09:12:42+08:00</published>
+  
+    <updated>2018-06-10T09:12:42+08:00</updated>
+  
+    <id>203ny.tk/posts/Linux-%E9%98%B2%E7%81%AB%E5%A2%99Firewalld/</id>
+    <content src="203ny.tk/posts/Linux-%E9%98%B2%E7%81%AB%E5%A2%99Firewalld/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      防火墙Firewalld
+
+最近想把自己的服务器提升一下档次，以前都是直接关掉防火墙，最经重新搭服务器就想试试防火墙怎么用了
+
+[root@centos-tokyo ~]# firewall-cmd --zone=dmz --list-ports
+
+[root@centos-tokyo ~]# firewall-cmd --zone=public --add-port=80/tcp --permanent
+success
+[root@centos-tokyo ~]# firewall-cmd --zone=dmz --list-ports
+
+[root@centos-tokyo ~]# firewall-cmd --zone=public --list-ports
+
+[root@centos-tokyo ~]# systemctl restart firewalld
+[root@ce...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Jenkins FAQ</title>
+    <link href="203ny.tk/posts/%E6%8A%80%E6%9C%AF-Jenkins-FAQ/" rel="alternate" type="text/html" title="Jenkins FAQ" />
+    <published>2018-06-07T11:30:42+08:00</published>
+  
+    <updated>2018-06-07T11:30:42+08:00</updated>
+  
+    <id>203ny.tk/posts/%E6%8A%80%E6%9C%AF-Jenkins-FAQ/</id>
+    <content src="203ny.tk/posts/%E6%8A%80%E6%9C%AF-Jenkins-FAQ/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="技术" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Jenkins FAQ
+
+1.由于权限设置不对导致Jenkins无法登录
+
+在jenkins默认的主目录.jenkins中修改config.xml文件
+
+这个权限对应“任何用户可以做任何事(没有任何限制)
+
+&amp;lt;authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"&amp;gt;
+&amp;lt;/authorizationStrategy&amp;gt;
+
+
+这个权限对应“登录用户可以做任何事
+
+&amp;lt;authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy"&amp;gt;
+&amp;lt;/authorizationStrategy&amp;gt;
+
+
+这个权限对应 test用户可以是管理员、打标签...
+    </summary>
+  
+
+  </entry>
 
 </feed>
 
