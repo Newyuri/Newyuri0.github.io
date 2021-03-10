@@ -4,7 +4,7 @@
   <id>203ny.tk/</id>
   <title>Yucapri</title>
   <subtitle>Blog of Yucapri</subtitle>
-  <updated>2021-03-09T18:30:34+08:00</updated>
+  <updated>2021-03-10T20:14:05+08:00</updated>
   <author>
     <name>Yucapri</name>
     <uri>203ny.tk/</uri>
@@ -17,71 +17,6 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title>Markdown语法之复选框</title>
-    <link href="203ny.tk/posts/Markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/" rel="alternate" type="text/html" title="Markdown语法之复选框" />
-    <published>2021-02-08T13:17:59+08:00</published>
-  
-    <updated>2021-02-08T13:17:59+08:00</updated>
-  
-    <id>203ny.tk/posts/Markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/</id>
-    <content src="203ny.tk/posts/Markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/" />
-    <author>
-      <name>Yucapri</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-    <category term="学习" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      学习内容：Markdown复选框
-
-在无序列表符号后面加上[]或者[x]代表选中或者未选中情况
-
-- [x] ROW1  
-- [ ] ROW2 
-
-
-或者
-
-+ [x] ROW1  
-+ [ ] ROW2 
-
-
-或者
-
-* [x] ROW1  
-* [ ] ROW2
-
-
-效果如下：
-
-
-  ROW1
-  ROW2
-
-
-
-
-
-    </summary>
-  
-
-  </entry>
 
 </feed>
 
